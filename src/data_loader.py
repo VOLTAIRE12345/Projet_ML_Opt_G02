@@ -92,8 +92,8 @@ def create_balanced_subset(
         indices = [i for i, l in enumerate(labels) if l == label]
         n       = min(n_per_class, len(indices))
         chosen  = rng.choice(indices, size=n, replace=False)
-        selected_texts.extend([examples[i] for i in chosen])
-        selected_labels.extend([labels[i]  for i in chosen])
+        selected_texts.extend([examples[int(i)] for i in chosen])
+        selected_labels.extend([labels[int(i)]  for i in chosen])
 
     return selected_texts, selected_labels
 
