@@ -42,8 +42,8 @@ FIXED_HP = {
     "learning_rate": 2e-5,     # LR standard pour le fine-tuning BERT
     "batch_size":    8,         # petit batch → adapté CPU
     "num_epochs":    3,         # 3 époques suffisantes pour détecter la généralisation
-    "warmup_steps":  100,       # préchauffage du scheduler linéaire
-    "max_steps":     300,       # plafond de sécurité CPU
+    "warmup_steps":  10,       # préchauffage du scheduler linéaire
+    "max_steps":     9999,       # plafond de sécurité CPU
 }
 
 # ── Espaces de recherche P02 (grid exhaustif) ─────────────────
