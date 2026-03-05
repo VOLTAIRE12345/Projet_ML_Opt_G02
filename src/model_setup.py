@@ -90,7 +90,7 @@ def load_bert_model(
         MODEL_NAME,
         config     = config,
         # float32 sur CPU ; float16 sur GPU pour économiser la mémoire
-        torch_dtype = torch.float32 if device.type == "cpu" else torch.float16,
+        torch_dtype = torch.float32,
         ignore_mismatched_sizes = True,   # tête de classification réinitialisée
     )
 
