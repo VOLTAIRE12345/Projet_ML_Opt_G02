@@ -71,7 +71,7 @@ def load_bert_model(
     if device is None:
         device = get_device()
 
-    print(f"\n🤖 Chargement de BERT-base-uncased (M02)")
+    print(f"\n Chargement de BERT-base-uncased (M02)")
     print(f"   dropout_rate      = {dropout_rate}")
     print(f"   attention_dropout = {attention_dropout}")
 
@@ -118,7 +118,7 @@ def reset_classifier_head(model) -> None:
         for layer in model.classifier.children():
             if hasattr(layer, "reset_parameters"):
                 layer.reset_parameters()
-        print("🔄 Tête de classification réinitialisée.")
+        print("Tête de classification réinitialisée.")
 
 
 # ──────────────────────────────────────────────────────────────
@@ -129,7 +129,7 @@ def model_summary(model) -> None:
     total     = sum(p.numel() for p in model.parameters())
     trainable = sum(p.numel() for p in model.parameters() if p.requires_grad)
 
-    print("\n📊 Résumé du modèle BERT-base")
+    print("\n Résumé du modèle BERT-base")
     print(f"   Paramètres totaux      : {total:>12,}")
     print(f"   Paramètres entraînables: {trainable:>12,}")
     print(f"   Couches Transformer    : {model.config.num_hidden_layers}")
