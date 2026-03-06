@@ -26,7 +26,7 @@ NUM_LABELS        = 2                    # 0 = négatif, 1 = positif
 MAX_SEQ_LENGTH    = 128                  # troncature → raisonnable pour CPU
 RANDOM_SEED       = 42                   # reproductibilité garantie
 
-# Taille des sous-ensembles (adaptation CPU, cf. §2.2 du sujet)
+# Taille des sous-ensembles (adaptation CPU, cf. 2.2 du sujet)
 N_TRAIN_PER_CLASS = 400   # → 800 exemples d'entraînement
 N_VAL_PER_CLASS   = 100   # → 200 exemples de validation
 N_TEST_PER_CLASS  = 100   # → 200 exemples de test
