@@ -1,7 +1,7 @@
 """
-==============================================================
- G02 — IMDb + BERT-base | Problématique P02 : Régularisation
-==============================================================
+==============================================================================
+ G02 — IMDb + BERT-base | Problématique P02 : Régularisation et Généralisation
+==============================================================================
 Module : visualization.py
 Rôle   : Toutes les visualisations du projet :
           1. Heatmap des performances (weight_decay × dropout)
@@ -10,7 +10,7 @@ Rôle   : Toutes les visualisations du projet :
           4. Loss landscape 1D (méthode simplifiée CPU)
           5. Métriques de platitude (Sharpness)
 
-Auteur : Groupe G02
+Auteur : AZONFACK DOLVIANE MYRIAM, FONKOUA GANKE VOLTAIRE, OGNIMBA SADRI (Groupe Projet G02)
 Date   : Mars 2026
 """
 
@@ -88,7 +88,7 @@ def plot_performance_heatmap(results_csv: str = "results/optuna_results.csv") ->
     path = f"{FIGURES_DIR}/heatmap_performance.png"
     plt.savefig(path, dpi=150, bbox_inches="tight")
     plt.close()
-    print(f"  📊 Heatmap sauvegardée → {path}")
+    print(f"  Heatmap sauvegardée → {path}")
 
 
 # ──────────────────────────────────────────────────────────────
